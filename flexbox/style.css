@@ -10,3 +10,8 @@
 .container-row {
   display: flex;
 }
+
+.container-col {
+  display: flex;
+  flex-direction: column;
+}
