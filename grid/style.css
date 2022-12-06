@@ -10,4 +10,5 @@
   /* fr: 画面横サイズに合わせて列幅を変える */
   grid-template-columns: 1fr 1fr 1fr;
   gap: 10px;
+  grid-template-rows: 100px 100px;
 }
