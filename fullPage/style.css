@@ -18,6 +18,14 @@ a {
 img {
   max-width: 100%;
 }
+/* 背景 */
+.big-bg {
+  background-image: url(images/main-bg.jpg);
+  background-size: cover; /* 画像の比率を保つ */
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+}
 
 /* Header */
 .page-header {
