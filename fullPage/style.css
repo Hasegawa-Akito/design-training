@@ -80,6 +80,7 @@ img {
   font-family: "Philosopher", serif; /* fontかっこいい */
   text-transform: uppercase;
   font-weight: normal;
+  text-transform: none;
 }
 
 /* ボタン */
