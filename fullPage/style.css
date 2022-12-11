@@ -19,12 +19,14 @@ img {
   max-width: 100%;
 }
 /* 背景 */
-.big-bg {
+#home {
   background-image: url(images/main-bg.jpg);
+  min-height: 100vh;
+}
+.big-bg {
   background-size: cover; /* 画像の比率を保つ */
   background-position: center;
   background-repeat: no-repeat;
-  min-height: 100vh;
 }
 
 /* Header */
@@ -93,4 +95,13 @@ img {
 }
 .button:hover {
   background-color: #0090aa;
+}
+
+/* Newsページ */
+#news {
+  background-image: url(images/news-bg.jpg);
+  height: 270px;
+}
+#news .page-title {
+  text-align: center;
 }
