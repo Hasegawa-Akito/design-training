@@ -1,0 +1,24 @@
+/* お知らせ */
+.infomation {
+  width: 100%;
+  height: 40px;
+  background-color: rgb(210, 210, 210);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.infomation p {
+  color: #fff;
+  font-size: 0.75rem;
+  padding: 1px 0; /* hover時border生成によって文字が動くのを防ぐ */
+}
+.infomation p:hover {
+  border-bottom: 1px black solid;
+  padding-bottom: 0; /* hover時border生成によって文字が動くのを防ぐ */
+}
+/* header */
+header {
+  width: 100%;
+  height: 100px;
+  background-color: black;
+}
