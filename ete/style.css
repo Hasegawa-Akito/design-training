@@ -132,3 +132,19 @@ header {
   border-color: black black transparent transparent;
   transform: rotate(45deg); /* 要素の四角を回転させる */
 }
+.swiper-bullet {
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.swiper-bullet span {
+  margin: auto 5px;
+  width: 7px;
+  height: 7px;
+  border-radius: 100%;
+  background-color: #fff;
+}
+#bullet3 {
+  background-color: black;
+}
