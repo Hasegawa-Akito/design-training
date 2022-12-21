@@ -87,3 +87,34 @@ header {
   background-position: center top;
   background-repeat: no-repeat;
 }
+.image-controller {
+  width: 100%;
+  height: 570px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#left-controller {
+  padding: 17px 12px 17px 22px;
+  background-color: white;
+  opacity: 0.4;
+}
+#right-controller {
+  padding: 17px 22px 17px 12px;
+  background-color: white;
+  opacity: 0.4;
+}
+.left-controller-arrow {
+  width: 12px;
+  height: 12px;
+  border: 1px solid;
+  border-color: transparent transparent black black;
+  transform: rotate(45deg); /* 要素の四角を回転させる */
+}
+.right-controller-arrow {
+  width: 12px;
+  height: 12px;
+  border: 1px solid;
+  border-color: black black transparent transparent;
+  transform: rotate(45deg); /* 要素の四角を回転させる */
+}
