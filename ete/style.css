@@ -87,7 +87,11 @@ header {
   background-position: center top;
   background-repeat: no-repeat;
 }
+.main-slide:hover .image-controller {
+  opacity: 1;
+}
 .image-controller {
+  opacity: 0;
   width: 100%;
   height: 570px;
   display: flex;
@@ -96,13 +100,23 @@ header {
 }
 #left-controller {
   padding: 17px 12px 17px 22px;
-  background-color: white;
-  opacity: 0.4;
+  background-color: rgba(255, 255, 255, 0.4);
 }
 #right-controller {
   padding: 17px 22px 17px 12px;
-  background-color: white;
-  opacity: 0.4;
+  background-color: rgba(255, 255, 255, 0.4);
+}
+#left-controller:hover {
+  background-color: black;
+}
+#left-controller:hover .left-controller-arrow {
+  border-color: transparent transparent #fff #fff;
+}
+#right-controller:hover {
+  background-color: black;
+}
+#right-controller:hover .right-controller-arrow {
+  border-color: #fff #fff transparent transparent;
 }
 .left-controller-arrow {
   width: 12px;
