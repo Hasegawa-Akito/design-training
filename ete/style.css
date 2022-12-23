@@ -148,3 +148,43 @@ header {
 #bullet3 {
   background-color: black;
 }
+/* topics */
+.topics {
+  width: 100%;
+}
+.topics h2 {
+  text-align: center;
+  font-weight: lighter;
+  margin-top: 60px;
+  margin-bottom: 40px;
+}
+.topics-gallery {
+  display: flex;
+  justify-content: center;
+}
+.topics-gallery img {
+  width: 230px;
+  height: 143.11px;
+}
+.topics-gallery .topic-tag {
+  margin: 0 15px;
+  display: flex;
+  flex-flow: column;
+}
+.topics-gallery p,
+span {
+  margin-top: 7px;
+  font-size: 0.65rem;
+}
+.topics-gallery span {
+  color: gray;
+}
+.topics-gallery button {
+  border-radius: 5px;
+}
+.more-tag {
+  width: 100%;
+}
+.more-tag {
+  text-align: center;
+}
