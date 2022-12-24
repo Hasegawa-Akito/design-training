@@ -1,3 +1,6 @@
+.wrapper {
+  padding: 0 200px;
+}
 /* お知らせ */
 .infomation {
   width: 100%;
@@ -147,4 +150,145 @@ header {
 }
 #bullet3 {
   background-color: black;
+}
+/* topics */
+.topics {
+  width: 100%;
+}
+.topics h2 {
+  text-align: center;
+  font-weight: lighter;
+  margin-top: 60px;
+  margin-bottom: 40px;
+}
+.topics-gallery {
+  display: flex;
+  justify-content: center;
+}
+.topics-gallery img {
+  width: 230px;
+  height: 143.11px;
+}
+.topic-tag {
+  color: inherit;
+  text-decoration: none;
+  margin: 0 15px;
+  display: flex;
+  flex-flow: column;
+}
+.topics-gallery p,
+span {
+  margin-top: 5px;
+  margin-bottom: 1px;
+  width: fit-content; /* 中の文字(要素)の長さと同じになるように親要素の幅を決める */
+  font-size: 0.65rem;
+}
+.topics-gallery span {
+  color: gray;
+}
+.topics-gallery .topic-tag:hover p,
+.topics-gallery .topic-tag:hover span {
+  border-bottom: 1px black solid;
+  margin-bottom: 0; /* border-bottomによって動くのを防ぐ */
+}
+.topics-gallery button {
+  border-radius: 5px;
+}
+.more-tag {
+  width: 100%;
+  text-align: center;
+  margin-top: 50px;
+}
+.more-tag a {
+  color: inherit;
+  text-decoration: none;
+  font-size: 0.75rem;
+  padding: 15px 90px;
+  border: 1px rgb(209, 209, 209) solid;
+  border-radius: 5px;
+}
+.more-tag a:hover {
+  color: white;
+  background-color: rgb(189, 189, 189);
+}
+/* infomations */
+.infomations {
+  width: 100%;
+  margin-bottom: 100px;
+}
+.infomations h2 {
+  text-align: center;
+  font-weight: lighter;
+  margin-top: 60px;
+  padding-bottom: 40px;
+  border-bottom: 1px rgb(209, 209, 209) solid;
+}
+.infomations-tag div {
+  padding: 15px 0;
+  font-size: 0.825rem;
+  border-bottom: 1px rgb(209, 209, 209) solid;
+}
+.infomations-tag span {
+  margin-right: 20px;
+}
+.infomations-tag a {
+  margin-right: 20px;
+  color: inherit;
+  text-decoration: none;
+  padding-bottom: 1px;
+}
+.infomations-tag a:hover {
+  border-bottom: 1px black solid;
+  padding-bottom: 0;
+}
+/* footer */
+footer {
+  width: 100%;
+  height: 570px;
+  background-color: rgb(200, 200, 200);
+  display: flex;
+  align-items: center;
+  flex-flow: column;
+  font-weight: lighter;
+  color: #fff;
+}
+.tag-list {
+  display: flex;
+  margin-top: 100px;
+}
+.tag-list div {
+  padding: 2px 20px;
+  border-right: 1px #fff solid;
+  flex: 1; /* 横並び要素の幅を揃える */
+  min-width: 190px; /* これがないと一番小さい幅に統一される */
+  display: flex;
+  flex-flow: column;
+}
+.brand-list {
+  border-left: 1px #fff solid;
+}
+.tag-list p {
+  font-size: 0.825rem;
+  margin-bottom: 15px;
+}
+.tag-list a {
+  font-size: 0.75rem;
+  color: inherit;
+  text-decoration: none;
+  padding-bottom: 1px;
+  margin: 5px 0;
+  width: fit-content;
+}
+.tag-list a:hover {
+  border-bottom: 1px #fff solid;
+  padding-bottom: 0;
+}
+.footer-message {
+  width: 300px;
+  margin-top: 50px;
+  font-size: 0.75rem;
+}
+.company {
+  margin-top: 50px;
+  font-size: 0.75rem;
 }
