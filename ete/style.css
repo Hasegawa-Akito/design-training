@@ -1,3 +1,6 @@
+.wrapper {
+  padding: 0 200px;
+}
 /* お知らせ */
 .infomation {
   width: 100%;
@@ -207,4 +210,33 @@ span {
 .more-tag a:hover {
   color: white;
   background-color: rgb(189, 189, 189);
+}
+/* infomations */
+.infomations {
+  width: 100%;
+}
+.infomations h2 {
+  text-align: center;
+  font-weight: lighter;
+  margin-top: 60px;
+  padding-bottom: 40px;
+  border-bottom: 1px rgb(209, 209, 209) solid;
+}
+.infomations-tag div {
+  padding: 15px 0;
+  font-size: 0.825rem;
+  border-bottom: 1px rgb(209, 209, 209) solid;
+}
+.infomations-tag span {
+  margin-right: 20px;
+}
+.infomations-tag a {
+  margin-right: 20px;
+  color: inherit;
+  text-decoration: none;
+  padding-bottom: 1px;
+}
+.infomations-tag a:hover {
+  border-bottom: 1px black solid;
+  padding-bottom: 0;
 }
