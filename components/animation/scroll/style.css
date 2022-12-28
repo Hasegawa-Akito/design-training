@@ -1,0 +1,30 @@
+html {
+  height: 200vh;
+}
+.box {
+  width: 50px;
+  height: 50px;
+  background-color: gold;
+  position: fixed;
+  top: calc(50% - 25px);
+  animation-name: box-animation;
+  animation-timeline: box-animation-timeline;
+  animation-duration: 10s;
+  animation-fill-mode: both;
+}
+@keyframes box-animation {
+  0% {
+    left: 0%;
+  }
+  50% {
+    left: 50%;
+  }
+  100% {
+    left: 100%;
+  }
+}
+@scroll-timeline box-animation-timeline {
+  start: 0%;
+  end: 100%;
+  time-range: 5s;
+}
