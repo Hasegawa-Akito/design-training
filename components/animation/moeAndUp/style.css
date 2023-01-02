@@ -1,0 +1,79 @@
+body {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.box1 {
+  width: 300px;
+  height: 200px;
+  background-color: gray;
+  z-index: 0;
+  text-align: center;
+  animation-name: moveUpAnime; /*アニメーションの定義名*/
+  animation-duration: 1s; /*アニメーション変化時間 ※デフォルト*/
+  animation-fill-mode: forwards; /*アニメーションの開始と終了時の状態を指定*/
+  z-index: 10;
+  transform: scale(1.2, 1.2);
+}
+.box2 {
+  margin-left: -60px;
+  width: 300px;
+  height: 200px;
+  background-color: rgb(232, 148, 231);
+  z-index: 0;
+  text-align: center;
+  animation-name: moveDownAnime; /*アニメーションの定義名*/
+  animation-duration: 1s; /*アニメーション変化時間 ※デフォルト*/
+  animation-fill-mode: forwards; /*アニメーションの開始と終了時の状態を指定*/
+  z-index: 0;
+  transform: scale(0.8, 0.8);
+}
+
+/*アニメーションの開始から終了までを指定する*/
+@keyframes moveUpAnime {
+  0% {
+    z-index: 10;
+    transform: translateX(0) scale(1.2, 1.2);
+  }
+
+  33% {
+    z-index: 10;
+    transform: translateX(-50px) scale(1.2, 1.2); /* transformの順番や書き方に注意*/
+    /* translate -> rotate -> scale -> skew*/
+  }
+
+  66% {
+    z-index: 0;
+    transform: translateX(-50px) scale(0.8, 0.8);
+  }
+
+  100% {
+    z-index: 0;
+    transform: translateX(0) scale(0.8, 0.8);
+  }
+}
+
+@keyframes moveDownAnime {
+  0% {
+    z-index: 0;
+    transform: translateX(0) scale(0.8, 0.8);
+  }
+
+  33% {
+    z-index: 0;
+    transform: translateX(50px) scale(0.8, 0.8); /* transformの順番や書き方に注意*/
+    /* translate -> rotate -> scale -> skew*/
+  }
+
+  66% {
+    z-index: 10;
+    transform: translateX(50px) scale(1.2, 1.2);
+  }
+
+  100% {
+    z-index: 10;
+    transform: translateX(0) scale(1.2, 1.2);
+  }
+}
