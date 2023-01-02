@@ -1,0 +1,24 @@
+body {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+h1 {
+  font-size: 3.25rem;
+}
+
+.arrow {
+  position: relative;
+  border-bottom: 2px black solid;
+}
+.arrow::after {
+  content: "　";
+  width: 30px;
+  position: absolute;
+  right: -24.5px;
+  bottom: 0;
+  border-bottom: 2px black solid;
+  transform: rotate(35deg);
+}
