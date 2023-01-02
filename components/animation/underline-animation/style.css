@@ -1,0 +1,62 @@
+body {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.arrow {
+  display: flex;
+  position: relative;
+  font-size: 3.25rem;
+}
+.arrow::after {
+  content: "　";
+  width: 0%;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  border-bottom: 2px black solid;
+}
+.arrow:hover::after {
+  animation-name: under-animation;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+}
+@keyframes under-animation {
+  0% {
+    width: 0%;
+  }
+  60% {
+    width: 115%;
+  }
+  100% {
+    width: 115%;
+  }
+}
+
+.diagonal {
+  width: 0;
+  position: absolute;
+  right: -16%;
+  bottom: 9px;
+  border-bottom: 2px black solid;
+  transform: rotate(215deg);
+}
+.arrow:hover .diagonal {
+  animation-name: diagonal-animation;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+}
+@keyframes diagonal-animation {
+  0% {
+    width: 0;
+  }
+  50% {
+    width: 0;
+  }
+  100% {
+    width: 30px;
+  }
+}
