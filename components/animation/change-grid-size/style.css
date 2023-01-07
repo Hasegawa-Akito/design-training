@@ -1,0 +1,26 @@
+.grid-content {
+  width: 100%;
+  display: grid;
+  /* repeatで三つ分を設定 */
+  grid-template-columns: repeat(
+    3,
+    minmax(100px, 1fr)
+      /* 均等のサイズになるようにしているためwidthを変更すればgrid幅も変更される*/
+  ); /* minmaxで最大で三つを均等にしたサイズ。最小で100px */
+  grid-template-rows: repeat(2, 300px);
+  gap: 10px;
+}
+.grid-content:hover {
+  animation-name: grid-size-small;
+  animation-duration: 0.3s;
+  animation-fill-mode: forwards;
+}
+@keyframes grid-size-small {
+  to {
+    width: 80%;
+  }
+}
+
+.grid-item {
+  background-color: black;
+}

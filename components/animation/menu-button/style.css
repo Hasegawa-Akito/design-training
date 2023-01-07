@@ -1,0 +1,45 @@
+body {
+  width: 100%;
+  height: 95vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.menu-button {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  background: black;
+  cursor: pointer;
+  z-index: 100;
+}
+.menu-button i {
+  display: block;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 30px;
+  height: 5px;
+  background: rgb(255, 255, 255);
+  transition: all 0.5s;
+}
+.menu-button i:first-child {
+  top: 10px;
+}
+.menu-button i:nth-child(2) {
+  top: 50%;
+}
+.menu-button i:last-child {
+  top: 30px;
+}
+.menu-button:hover i:first-child {
+  top: 50%;
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+.menu-button:hover i:nth-child(2) {
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+.menu-button:hover i:last-child {
+  top: 50%;
+  transform: translate(-50%, -50%) rotate(-45deg);
+}
