@@ -2,6 +2,7 @@ body {
   width: 100%;
   height: 95vh;
   display: flex;
+  flex-flow: column;
   justify-content: center;
   align-items: center;
 }
@@ -26,4 +27,35 @@ body {
   to {
     transform: rotate(360deg);
   }
+}
+
+.spin-long {
+  margin-top: 100px;
+  width: 50px;
+  height: 50px;
+  border: solid 5px #01558d;
+  border-top-color: transparent;
+  border-radius: 50%;
+  animation-name: spin-animation;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+.spin-half {
+  margin-top: 100px;
+  width: 60px;
+  height: 60px;
+  animation-name: spin-animation;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+.spin-half div {
+  width: 50px;
+  height: 25px;
+  border-top: solid 5px #01558d;
+  border-left: solid 5px #01558d;
+  border-right: solid 5px #01558d;
+  border-radius: 100px 100px 0 0;
 }
