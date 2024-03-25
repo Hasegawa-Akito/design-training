@@ -1,0 +1,265 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+html {
+  background-color: #ccc;
+}
+body {
+  color: white;
+  background-color: black;
+  max-width: 375px;
+  margin: 0 auto;
+}
+a {
+  color: white;
+  text-decoration: none;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  height: 48px;
+  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+  background: black;
+  padding: 0 8px;
+}
+.header_nav a {
+  display: grid;
+  place-items: center;
+  width: 40px;
+  height: 40px;
+}
+.header_nav a img {
+  width: 20px;
+  height: 20px;
+}
+.header_name {
+  font-size: 14px;
+  text-align: center;
+}
+.header_action {
+  display: flex;
+  gap: 8px;
+  justify-content: flex-end;
+}
+.header_action a {
+  display: grid;
+  place-items: center;
+  width: 40px;
+  height: 40px;
+}
+.header_action a img {
+  width: 20px;
+  height: 20px;
+}
+
+.profile {
+  padding: 0 16px;
+  margin: 16px 0 0;
+}
+.profile_head {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+.profile_head_image img {
+  display: block;
+  width: 88px;
+  height: 88px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center;
+}
+.profile_head_text {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+  flex: auto;
+  /* flex-grow: 1; flex-shrink:1; flex-basis:autoと同じ */
+  /* flex-growはflexのitemにつけると余白の分配ができる。一つのitemだけにflex-grow:1をつけるとそのitemが余白を埋めるように拡大される */
+  /* flex-shrinkはitemたちの要素が画面サイズより大きくなったときどのような割合で縮小するかを決める。 一つのitemだけにflex-shrink:1をつけるとその要素だけ縮む*/
+}
+.profile_head_count {
+  font-size: 12px;
+  font-weight: bold;
+  text-align: center;
+}
+.profile_head_count span {
+  font-size: 11px;
+  font-weight: normal;
+  display: block;
+}
+.profile_body {
+  margin: 8px 0 0;
+}
+.profile_body_text p {
+  font-size: 12px;
+  font-weight: bold;
+}
+.profile_body_text p span {
+  color: #aaa;
+  display: block;
+}
+.profile_body_text ul {
+  list-style-type: none;
+}
+.profile_body_text ul li {
+  font-size: 11px;
+  padding-left: 1.5em;
+  position: relative;
+}
+
+.profile_body_text ul li::before {
+  content: "-";
+  position: absolute;
+  inset: 0 auto auto 0; /* top, right, bottom, leftを一気に設定 */
+}
+.profile_body_text ul li a {
+  color: #aaa;
+  margin-left: 1.5em;
+}
+.profile_body_text a {
+  color: #dff1fe;
+  font-size: 11px;
+}
+.profile_body_follower {
+  font-size: 11px;
+  margin-top: 8px;
+  display: flex;
+  align-items: center;
+}
+.profile_body_follower img {
+  display: block;
+  width: 32px;
+  height: 32px;
+  background-color: #fff;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center;
+}
+.profile_body_follower span {
+  display: inline-block;
+  color: #ccc;
+  margin-left: 1em;
+}
+.profile_body_action {
+  display: grid;
+  grid-template-columns: 1fr 1fr auto;
+  /* autoはその要素の標準の幅に合わせられる。今回要素の最小値は32pxだからその幅になるよう調整される。 */
+  gap: 6px;
+  margin: 16px 0 0;
+}
+.profile_body_action a {
+  font-size: 12px;
+  display: grid;
+  place-items: center;
+  /* justify-itemsとalign-itemsをcenterに二つとも設定できる。 */
+  /* justify-itemsはgridの時に用いられる。 flexのときはjustify-content */
+  /* contentとitemsの違いは軸で考える。flexの場合横軸は1つのためjustify-content, 縦軸は複数想定されるためalign-items */
+  /* gridの場合横軸は複数想定できるためjustify-items, 縦軸も複数想定されるためalign-items */
+  height: 32px;
+  min-width: 32px;
+  border-radius: 8px;
+  background-color: #222;
+}
+.profile_body_action a img {
+  width: 16px;
+  height: 16px;
+}
+.profile_body_archive {
+  display: flex;
+  gap: 16px;
+  margin: 16px 0 0;
+}
+.profile_body_archive_item_img {
+  position: relative;
+  width: 64px;
+  height: 64px;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  border-radius: 50%;
+}
+.profile_body_archive img {
+  position: absolute;
+  inset: 50% auto auto 50%;
+  transform: translate(-50%, -50%);
+  display: block;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center;
+}
+.profile_body_archive span {
+  color: #ccc;
+  font-size: 11px;
+  display: block;
+  text-align: center;
+  margin: 0.5em 0 0;
+}
+
+.tab {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin: 16px 0 0;
+}
+.tab a {
+  display: grid;
+  place-items: center;
+  opacity: 0.64;
+  border-bottom: 1px solid transparent;
+  padding: 8px 0;
+}
+.tab a.is_active {
+  opacity: 1;
+  border-bottom: 1px solid white;
+}
+.tab a img {
+  width: 20px;
+  height: 20px;
+  fill: white;
+}
+
+.post {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1px;
+  margin: 2px 0 0;
+}
+.post img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 1 / 1; /* widthと同じ値でheightを設定する */
+  object-fit: cover;
+}
+
+footer {
+  position: sticky;
+  inset: auto auto 0 0;
+  z-index: 10;
+  background: black;
+  width: 100%;
+}
+.tabbar {
+  width: 100%;
+  height: 56px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  place-items: center;
+}
+.tabbar a {
+  opacity: 0.64;
+}
+.tabbar a.is_active {
+  opacity: 1;
+}
+.tabbar a img {
+  width: 24px;
+  height: 24px;
+}
+.tabbar a.tabbar_profile_img img {
+  border-radius: 50%;
+}
