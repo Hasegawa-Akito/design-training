@@ -1,0 +1,156 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+html {
+  background: gray;
+}
+body {
+  width: 375px;
+  min-height: 100vh;
+  margin: 0 auto;
+  background: white;
+}
+a {
+  color: black;
+  text-decoration: none;
+}
+header {
+  height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  padding: 0 16px;
+  background: rgba(255, 255, 255, 0.7);
+  position: sticky;
+  top: 0;
+  left: 0;
+}
+.header_nav a {
+  display: grid;
+  place-items: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: transparent;
+  position: relative;
+}
+.header_nav a:hover {
+  background: rgb(220, 220, 220);
+}
+.header_nav a::before {
+  content: "Back";
+  padding: 2px 4px;
+  border-radius: 2px;
+  background: rgba(0, 0, 0, 0.7);
+  color: white;
+  font-size: 11px;
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translate(-50%, 110%);
+  opacity: 0;
+}
+.header_nav a:hover::before {
+  opacity: 1;
+  transition: opacity 0s 0.6s step-end;
+}
+.header_nav a img {
+  width: 16px;
+  height: 16px;
+}
+.header_info {
+  margin-left: 32px;
+  text-align: left;
+}
+.header_info_name {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+.header_info_name span {
+  font-size: 18px;
+  font-weight: bold;
+}
+.header_info_name img {
+  width: 20px;
+  height: 20px;
+}
+.header_info_posts {
+  padding: 4px 0;
+  color: rgb(80, 80, 80);
+  font-size: 12px;
+}
+.profile_head_banner {
+  padding: 0;
+  margin: 0;
+}
+.profile_banner img {
+  display: block;
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  object-position: center;
+}
+.profile_head {
+  position: relative;
+  height: 52px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: end;
+  padding: 0 8px;
+}
+.profile_head_image {
+  width: 104px;
+  height: 104px;
+  border-radius: 8px;
+  background-color: white;
+  display: grid;
+  place-items: center;
+  position: absolute;
+  top: 0;
+  left: 5%;
+  transform: translate(0, -50%);
+}
+.profile_head_image img {
+  display: block;
+  width: 100px;
+  height: 100px;
+  border-radius: 8px;
+}
+.profile_head_action {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.profile_head_action_menu button {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid rgb(200, 200, 200);
+  background: white;
+  transition: background 0.3s ease;
+  display: grid;
+  place-items: center;
+}
+.profile_head_action_menu button:hover {
+  background: rgb(220, 220, 220);
+}
+.profile_head_action_menu button img {
+  width: 16px;
+  height: 16px;
+}
+.profile_head_action_follow button {
+  padding: 0 20px;
+  height: 40px;
+  border-radius: 36px;
+  border: none;
+  background: black;
+  transition: background 0.3s ease;
+  color: white;
+  font-size: 15px;
+  font-weight: bold;
+}
+.profile_head_action_follow button:hover {
+  background: rgb(40, 40, 40);
+}
