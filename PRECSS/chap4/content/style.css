@@ -131,7 +131,8 @@ a.el_btn {
   align-items: center;
 }
 
-.bl_media__rev {
+/* モディファイアを使用する時は詳細度を高める */
+.bl_media.bl_media__rev {
   flex-direction: row-reverse;
   text-align: right;
 }
