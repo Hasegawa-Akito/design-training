@@ -83,5 +83,7 @@ img {
 .el_btn {
   background: #e25c00;
   color: #fff;
+}
+a.el_btn {
   text-decoration: none;
 }
