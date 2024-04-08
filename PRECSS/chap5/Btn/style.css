@@ -1,0 +1,46 @@
+body {
+  color: #222;
+  font-family: sans-serif;
+  line-height: 1.5;
+}
+a {
+  color: #0069ff;
+}
+img {
+  max-width: 100%;
+  vertical-align: top;
+}
+
+.ly_cont {
+  padding: 20px 40px;
+}
+
+.ly_btnUnits_items {
+  margin: 20px 0;
+}
+
+.ly_btnUnits_items:first-child {
+  margin-top: 0;
+}
+
+.el_btn {
+  text-decoration: none;
+  color: #fff;
+  background: #e25c00;
+  padding: 20px 10px;
+  width: 300px;
+  max-width: 100%;
+  display: inline-block;
+  border: 2px solid transparent;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+  font-size: 1.125em;
+  text-align: center;
+  transition: 0.25s;
+}
+
+.el_btn:hover,
+.el_btn:focus {
+  background: #fff;
+  color: #e25c00;
+  border-color: currentColor;
+}
